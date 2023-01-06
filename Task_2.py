@@ -5,12 +5,15 @@ print('Введите вещественное число: ')
 num = int(input())
 
 summ = 0
+list = []
 
 while num != 0:
     summ = summ + int(num % 10)
     num //= 10
 
-print(f'сумма отдельных чисел во введённом числе равна: {summ}')
+list.append(summ)
+
+print(f'сумма отдельных чисел во введённом числе равна: {list}')
 
 
 
