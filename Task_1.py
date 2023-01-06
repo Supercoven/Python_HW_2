@@ -5,5 +5,17 @@
 # - 6782 -> 23
 # - 0.67 -> 13
 # - 198.45 -> 27
+
 print('Введите вещественное число: ')
 num = input()
+sum_dig = 0
+
+power = len(num) - 2
+num = float(num)
+num *= int (10 ** power)
+
+while num:
+    sum_dig += int(num % 10)
+    num //= 10
+
+print(sum_dig)
