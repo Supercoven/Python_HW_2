@@ -10,7 +10,7 @@ while num != 0:
     summ = summ + int(num % 10)
     num //= 10
 
-print(summ)
+print(f'сумма отдельных чисел во введённом числе равна: {summ}')
 
 
 

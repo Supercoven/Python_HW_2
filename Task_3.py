@@ -4,3 +4,12 @@ print('Введите количество чисел для заполнени�
 num = int(input())
 
 
+sum_num = 0
+list_num = []
+
+for i in range(1, num + 1):
+    res = round((1 + 1/ i) ** i)
+    list_num.append(res)
+    sum_num += res
+
+print(f'Сумма чисел в списке: {sum_num}')
